@@ -17,9 +17,17 @@ PROJECT_PATH = os.path.join(SETTINGS_DIR,os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 
 TEMPLATE_PATH = os.path.join(PROJECT_PATH,'templates')
+STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+
+DATABASE_PATH = os.path.join(PROJECT_PATH,'resume.db')
 
 TEMPLATE_DIRS = (
     TEMPLATE_PATH,
+    )
+
+
+STATICFILES_DIRS = (
+    STATIC_PATH,
     )
 
 # Quick-start development settings - unsuitable for production
@@ -68,7 +76,7 @@ WSGI_APPLICATION = 'abhimanyu_portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': DATABASE_PATH,
     }
 }
 

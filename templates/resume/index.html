@@ -1,11 +1,194 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Abhimanyu</title>
-</head>
-<body>
-	<h1>Abhimanyu Kumar</h1>
-	Hello World! <strong>{{boldmessage}}</strong>
-
-</body>
-</html>
+{% extends 'resume/base.html' %}
+{% block title %} Abhimanyu Kumar ! Resume {% endblock %}
+{% block resume %}
+{%load static %}
+<div id="wrapper">
+  	<div class="wrapper-top"></div>
+  	<div class="wrapper-mid">
+    	<!-- Begin Paper -->
+    	<div id="paper">
+      		<div class="paper-top"></div>
+      		<div id="paper-mid">
+        		<div class="entry">
+          			<!-- Begin Personal Information -->
+          			<div class="row">
+          				<div class="col-md-8 name-text-col">
+            				<h4 class="text-primary">Abhimanyu Kumar <br />
+              				<span>Software Engineer</span></h4>
+              				<div>
+	            				<ul>
+			              			<li><img src="{%static 'icn-ad.gif' %}"/> Kanchanbagh, Hyderabad - 500058</li>
+			              			<li><img src="{%static 'icn-mail.gif' %}"/> abhimanyukumar48@gmail.com</li>
+			              			<li><img src="{%static 'icn-tel.gif' %}"/> +91-9492941710</li>
+			              			<li><img src="{%static 'icn-web.gif' %}"/>www.abhimanyuku.com</li>
+	            				</ul>
+	            			</div>  
+      					</div>
+      					<div class="col-lg-4 text-right">
+      						<a class='north' href="{%static 'AbhimanyuResume.pdf' %}" title="Download .pdf"><img src="{%static 'icn-save.jpg' %}" alt="Download the pdf version" /></a>
+      						<a class='north' href="javascript:window.print()" title="Print"><img src="{%static 'icn-print.jpg' %}" alt="" /></a>
+	            			<a class='north' id="contacts" href="mailto:abhimanyukumar48@gmail.com" title="Contact Me"><img src="{%static 'icn-contact.jpg' %}" alt="" /></a>
+	            			
+      					</div>
+      				</div>
+          <!-- End Personal Information -->
+          
+          <!-- End Social -->
+        </div>
+        
+        <!-- Begin 2nd Row -->
+        <div class="row">
+        	<div class="col-md-6 education-col">
+        		<h4 class="text-primary">Education</h4>
+        		<ul>
+        			<li>
+        				<b>B.Tech   -   Computer Science & Engineering</b>
+        				<p>Indian Institute Of Technology, Mandi <br/>
+        				July 2013</p>
+        			</li>
+        			<li>
+        				<b>Intermediate - Mathematics, Physics, Chemistry</b>
+        				<p>T.P.S. College, Patna<br/>
+        				May 2008</p>
+        			</li>
+        			<li>
+        				<b>Matric - Mathematics, Physics, Chemistry</b>
+        				<p>N.M. High School, Madhubani<br/>
+        				May 2006</p>
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="col-md-6 text-center">
+        	</div>
+        </div>
+        <!-- End 2nd Row -->
+        <!-- Begin 3rd Row -->
+        <div class="row">
+        	<div class="col-md-12 experience-col">
+        		<h4 class="text-primary">Experience</h4>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<ul>
+        					<li>
+        						<b>Defence Research & Development Organization, Hyderabad</b><br/>
+        						<em>Research Scientist</em>
+        						<ul>
+        							<li>
+                                        Designed and developed the modeling scheme for different Gyroscopes and Accelerometers Sensors.
+        							</li>
+        							<li>
+                                        Brought down the navigation output error from 3m/s to 1m/s by fitting nonlinear polynomial.
+        							</li>
+        							<li>
+                                        Created static library in c which wraps actual functionality of algorithms and can be called from other software using the API.
+        							</li>
+        						</ul>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="col-md-6 text-right">
+        			<b><em>Aug 2013 - Present</em></b>
+        			</div>
+        		</div>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<ul>
+        					<li>
+        						<b>Navyug Infosolutions Pvt. Ltd. | Noida, India</b><br/>
+        						<em>Android Developer</em>
+        						<ul>
+        							<li>
+                                        Designed patient details management system android app, which helps user to take care of their heath without worry of confidentiality.
+        							</li>
+        							<li>
+                                        Generated prototype of part of the project using vuforia augmented reality SDK.
+        							</li>
+        							<li>
+                                        Demonstrated prototype model which acted as a platform for turning this into a big ideas.
+        							</li>
+        						</ul>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="col-md-6 text-right">
+        			<b><em>Jan 2013 - Feb 2013</em></b>
+        			</div>
+        		</div>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<ul>
+        					<li>
+        						<b>Nucleus Software Exports Pvt. Ltd. | Noida, India</b><br/>
+        						<em>Software Developer</em>
+        						<ul>
+        							<li>
+                                        Developed data parser for analyzing facebook posts of individuals and using NLP techniques derive individuals sentiments.
+        							</li>
+        							<li>
+                                        Skills & tools used - Stanford Corenlp library, Web-service, java, MySql.
+        							</li>
+        						</ul>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="col-md-6 text-right">
+        			<b><em>June 2012 - July 2012</em></b>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <!-- End 3rd Row -->
+        <!-- Begin 3rd Row -->
+        <div class="row">
+        	<div class="col-md-12 skills-col">
+        		<h4 class="text-primary">Skills</h4>
+        		<div class="row">
+        			<div class="col-md-3">
+        				<ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Basics of Java</li>
+                            <li>Shell</li>
+        				</ul>
+        		    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Django</li>
+                            <li>Bootstrap</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Matlab</li>
+                            <li>Octave</li>
+                            <li>numpy</li>
+                            <li>Matplotlib</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Linux</li>
+                            <li>Eclipse</li>
+                            <li>Visual Studio</li>
+                            <li>VDSP</li>
+                        </ul>
+                    </div>
+                </div>
+        	</div>
+        </div>
+        <!-- End 3rd Row -->
+        
+        <!-- End 4th Row -->
+      </div>
+      <div class="clear"></div>
+      <div class="paper-bottom"></div>
+    </div>
+    <!-- End Paper -->
+  </div>
+  <div class="wrapper-bottom"></div>
+</div>
+{%endblock %}

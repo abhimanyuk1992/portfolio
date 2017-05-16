@@ -1,0 +1,89 @@
+/* your styles go here */
+.project-heading{
+	font-size:  18px;
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight: 600;
+	color: black;
+}
+
+/* SELF INFORMATION */
+/* ----------------------------------------- */
+
+.self {
+	width:250px;
+	float:left;
+	padding-top:11px;
+	margin-left:38px;
+	margin-bottom:15px;
+}
+
+.self ul {
+	padding-top: 10px;
+}
+
+.resume-address ul li.ad {
+	background-image:url(../icn-ad.gif);
+}
+
+.resume-address ul li.mail {
+	background-image:url(../icn-mail.gif);
+}
+
+.resume-address ul li.tel {
+	background-image:url(../icn-tel.gif);
+}
+
+.resume-address ul li.web {
+	background-image:url(../icn-web.gif);
+}
+
+.resume-address ul li {
+	background-repeat: no-repeat;
+	/*padding-left:26px;
+	background-position: 0 .1em;
+	height:25px;
+	margin-top:-2px;*/
+	display:block;
+	text-align: center;
+}
+
+.social {
+	width:135px;
+	float:right;
+	padding-top:10px;
+}
+
+.social ul {
+	list-style: none;
+}
+
+.social ul li {
+	float:left;
+	width:21px;
+	height:24px;
+	margin:0;
+	padding:0;
+	margin-left:6px;
+}
+
+.education-col{
+	padding-left: 100px;
+}
+
+.experience-col{
+	padding-left: 100px;
+}
+
+.skills-col{
+	padding-left: 100px;
+}
+
+.name-text-col{
+	padding-left: 100px;
+}
+
+.name-text-col ul li{
+	display: block;
+}
+
